@@ -1,8 +1,8 @@
 <?php
 include("includes/connect_db.php");
-$id= $_GET['id'];
-$req = $bdd->query("SELECT * FROM produit WHERE id=$id");
-$donnees = $req->fetch();
+
+$req = $bdd->query("SELECT * FROM panier ");
+//$donnees = $req->fetch();
  ?>
 <!DOCTYPE html>
 <html>
@@ -86,10 +86,10 @@ $donnees = $req->fetch();
           <b>4</b>
         </span>
       </h4>
-      <p><a href="#"><?php echo $donnees['produit']; ?></a> <span class="price">$15</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <?php while($donnees = $req->fetch()){ ?>
+      <p><a href="#"><?php echo $donnees['produit']; ?></a> <span class="price"><?php echo $donnees['prix']; ?>$</span></p>
+      <?php } ?>
+     
       <hr>
       <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
     </div>

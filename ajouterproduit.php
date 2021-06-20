@@ -133,15 +133,15 @@ $donnees = $req->fetch();
 									
 									<div class="form-group">
 									    <label for="msg-email">Produit</label>
-    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['produit']; ?>" name="<?php echo $donnees['produit']; ?>">
+    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['produit']; ?>" name="produit" value="<?php echo $donnees['produit'] ?>" >
 									</div>
 									<div class="form-group">
 									    <label for="msg-email">Prix</label>
-    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['produit']; ?>" name="<?php echo $donnees['produit']; ?>">
+    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['prix']; ?>" name="prix" value="<?php echo $donnees['prix'] ?>">
 									</div>
 									
 									<button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
-									<span class="btn-label">Envoyer message</span>
+									<span class="btn-label">Ajouter commander</span>
 									<span class="btn-icon fa fa-envelope"></span>
 									</button>
 									
