@@ -72,7 +72,7 @@
 
                                     <li style="margin-left: -15px;">
                                         
-                                        <a href="checkout.php" target="_blank"><span class="fa fa-instagram" style="font-size: x-large;"></span></a>
+                                        <a href="checkout.php" target="_blank"><span class="fas fa-cart-plus" style="font-size: x-large;"></span></a>
                                         
                                     </li>
 

@@ -8,6 +8,7 @@ $req = $bdd->query("SELECT * FROM panier ");
 <html>
     <head>
     <link href="src/css/checkout.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     </head>
     <body>
         
@@ -87,7 +88,9 @@ $req = $bdd->query("SELECT * FROM panier ");
         </span>
       </h4>
       <?php while($donnees = $req->fetch()){ ?>
-      <p><a href="#"><?php echo $donnees['produit']; ?></a> <span class="price"><?php echo $donnees['prix']; ?>$</span></p>
+      <p><a href="#"><?php echo $donnees['produit']; ?></a> <span class="price"><?php echo $donnees['prix']; ?>$</span>
+      <button style="font-size:24px">Supprimer <i class="fa fa-trash-o"></i></button>
+    </p>
       <?php } ?>
      
       <hr>

@@ -33,6 +33,7 @@ $req = $bdd->query("SELECT * FROM produit ");
         <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
         
 		<!-- head js -->
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         <script src="src/js/modernizr-2.6.2.min.js"></script>
         <style type="text/css">
          
