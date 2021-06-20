@@ -55,7 +55,7 @@
                                     <li><a href="recette.php">Galerie</a></li>
 
                                     <li><a href="contact.php">Contact</a></li>
-
+                                    
                                     <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
@@ -72,15 +72,17 @@
 
                                     <li style="margin-left: -15px;">
                                         
-                                        <a href="#" target="_blank"><span class="fa fa-instagram" style="font-size: x-large;"></span></a>
+                                        <a href="checkout.php" target="_blank"><span class="fa fa-instagram" style="font-size: x-large;"></span></a>
+                                        
                                     </li>
 
                                     <li style="margin-left: -15px;">
                                         <a href="#" target="_blank"><span class="fa fa-search" style="font-size: x-large;"></span></a>
                                         
                                     </li>
+                                    
                                 </ul>
-                            
+                                
                             </div>
 
                         </div>
