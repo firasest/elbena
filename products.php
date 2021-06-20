@@ -26,7 +26,7 @@ $req = $bdd->query("SELECT * FROM produit ");
         <link href="src/css/winemaker-theme.css" rel="stylesheet">
         <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
         <link href="src/css/style.css" rel="stylesheet">
-        
+        <link href="src/css/styleaddcart.css" rel="stylesheet">
         <!-- google fonts -->
         <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Merriweather:300,400,700,900,900italic,700italic,400italic,300italic" rel="stylesheet" type="text/css">
@@ -277,15 +277,20 @@ $req = $bdd->query("SELECT * FROM produit ");
                                             <article class="produit teaser">
                                                 <!--<img src="images/bg-product-teaser-new-vert.png" class="imgProduct">-->
                                                 <span class="product-newVert new-fr"><?php echo $donnees['catagorie']; ?></span>
-
+												
     											<div class="b-alimentaire">
     												<h3><a href="produit2.php"><?php echo $donnees['titre']; ?></a></h3>
     												<h4><a href="produit2.php"><?php echo $donnees['poids']; ?></a></h4>
-    											</div>
+													<button  class="card_button">Ajouter panier</button>
+												</div>
+												
     											<a href="produit-details.php?id=<?php echo $donnees['id']; ?>"><img class="lazy" data-src="<?php echo $donnees['img'];?>" class="lazy" alt="Macaron" width="300" height="600"></a>
-    										
+												
                                             </article> 
+											
                                         </div> 
+										
+										
 	<?php } ?>
 
 
