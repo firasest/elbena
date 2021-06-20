@@ -33,6 +33,7 @@ $donnees = $req->fetch();
         <link href="src/css/winemaker-theme.css" rel="stylesheet">
         <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
         <link href="src/css/style.css" rel="stylesheet">
+        <link href="src/css/styleaddcart.css" rel="stylesheet">
         
         <!-- google fonts -->
         <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
@@ -145,6 +146,9 @@ $donnees = $req->fetch();
             
           </tbody>
         </table>
+        <button  class="card_button">  
+        <a href="checkout.php?id=<?php echo $donnees['id']; ?>">Ajouter panier</a>
+        </button>
       </p>
     </div>
   </div><br><br>

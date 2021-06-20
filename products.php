@@ -281,8 +281,7 @@ $req = $bdd->query("SELECT * FROM produit ");
     											<div class="b-alimentaire">
     												<h3><a href="produit2.php"><?php echo $donnees['titre']; ?></a></h3>
     												<h4><a href="produit2.php"><?php echo $donnees['poids']; ?></a></h4>
-													<button  class="card_button"
->                            Ajouter panier</button>
+												
 												</div>
 												
     											<a href="produit-details.php?id=<?php echo $donnees['id']; ?>"><img class="lazy" data-src="<?php echo $donnees['img'];?>" class="lazy" alt="Macaron" width="300" height="600"></a>
