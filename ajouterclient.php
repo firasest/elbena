@@ -112,7 +112,7 @@ $donnees = $req->fetch();
 	                    <div class="row">
 		                    <div class="col-sm-5">
                        
-								<form action="Controller/ajouterproduct.php" method="post">
+								<form action="Controller/AjouterClient.php" method="post">
                      <?php 
                       if (isset($_GET['resultat'])) {
 
@@ -132,14 +132,30 @@ $donnees = $req->fetch();
 									<h2 style="font-weight: bold;color: #ce2b37;">Commander</h2>
 									
 									<div class="form-group">
-									    <label for="msg-email">Produit</label>
-    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['produit']; ?>" name="produit" value="<?php echo $donnees['produit'] ?>" >
+									    <label for="msg-email">nom_prenom</label>
+    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['nom_prenom']; ?>" name="nom_prenom" value="<?php echo $donnees['nom_prenom'] ?>" >
 									</div>
 									<div class="form-group">
-									    <label for="msg-email">Prix</label>
-    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['prix']; ?>" name="prix" value="<?php echo $donnees['prix'] ?>">
+									    <label for="msg-email">email</label>
+    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['email']; ?>" name="email" value="<?php echo $donnees['email'] ?>">
 									</div>
-									
+                                    <div class="form-group">
+									    <label for="msg-email">adresse</label>
+    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['adresse']; ?>" name="adresse" value="<?php echo $donnees['adresse'] ?>" >
+									</div>
+								
+                                    <div class="form-group">
+									    <label for="msg-email">ville</label>
+    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['ville']; ?>" name="ville" value="<?php echo $donnees['ville'] ?>" >
+									</div>
+									<div class="form-group">
+									    <label for="msg-email">region</label>
+    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['region']; ?>" name="region" value="<?php echo $donnees['region'] ?>">
+									</div>
+									<div class="form-group">
+									    <label for="msg-email">zip</label>
+    										<input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['zip']; ?>" name="zip" value="<?php echo $donnees['zip'] ?>">
+									</div>
 									<button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
 									<span class="btn-label">Ajouter commander</span>
 									<span class="btn-icon fa fa-envelope"></span>
