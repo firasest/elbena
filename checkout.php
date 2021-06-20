@@ -21,7 +21,7 @@ $donnees = $req->fetch();
           <div class="col-50">
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="<?php echo $donnees['produit']; ?>">
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="john@example.com">
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
@@ -86,7 +86,7 @@ $donnees = $req->fetch();
           <b>4</b>
         </span>
       </h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#"><?php echo $donnees['produit']; ?></a> <span class="price">$15</span></p>
       <p><a href="#">Product 2</a> <span class="price">$5</span></p>
       <p><a href="#">Product 3</a> <span class="price">$8</span></p>
       <p><a href="#">Product 4</a> <span class="price">$2</span></p>
