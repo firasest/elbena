@@ -42,6 +42,7 @@ $donnees = $req->fetch();
         
 		<!-- head js -->
         <script src="src/js/modernizr-2.6.2.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         <style type="text/css">
           @media (min-width:992px){
             .produitFont{
@@ -125,30 +126,38 @@ $donnees = $req->fetch();
     </div>
     <div>
       <p class="panel-body">
+      <form action="Controller/ajouterproduct.php" method="post">
        <table class="table table-bordered" style="background-color: #1a761d;">
+      
           <thead>
             <tr>
               <th scope="col" style="color: #fff">Produit </th>
-              <th scope="col" style="color: #fff">Code Produit </th>
-              <th scope="col" style="color: #fff">Poids moyen </th>
-              <th scope="col" style="color: #fff">Code EAN </th>
-              <th scope="col" style="color: #fff">DLC </th>
+              <th scope="col" style="color: #fff">Prix </th>
+              <th scope="col" style="color: #fff">Description </th>
+              
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="color: #fff"><center><?php echo $donnees['produit']; ?> </center></td>
-              <td style="color: #fff"><center><?php echo $donnees['code_produit']; ?></center></td>
-              <td style="color: #fff"><center><?php echo $donnees['poids']; ?></center></td>
-              <td style="color: #fff"><center><?php echo $donnees['code_ean']; ?></center></td>
-              <td style="color: #fff"><center><?php echo $donnees['dlc']; ?></center></td>
+              <td style="color: #fff"><center>
+              <input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['produit']; ?>" 
+              name="produit" value="<?php echo $donnees['produit'] ?>" >
+              </center></td>
+              <td style="color: #fff"><center>
+              <input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['prix']; ?>" 
+              name="prix" value="<?php echo $donnees['prix'] ?>">
+              </center></td>
+           
             </tr>
             
           </tbody>
+        
         </table>
-        <button  class="card_button">  
-        <a href="checkout.php?id=<?php echo $donnees['id']; ?>">Ajouter panier</a>
-        </button>
+        <button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
+									<span class="btn-label">Ajouter commander</span>
+									<span class="btn-icon fa fa-envelope"></span>
+									</button>
+          </form>
       </p>
     </div>
   </div><br><br>

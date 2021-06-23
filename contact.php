@@ -33,6 +33,7 @@ $donnees = $req->fetch();
         
 		<!-- head js -->
         <script src="src/js/modernizr-2.6.2.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         <style type="text/css">
           @media (min-width:992px){
             .page-header {

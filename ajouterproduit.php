@@ -34,6 +34,7 @@ $donnees = $req->fetch();
         
 		<!-- head js -->
         <script src="src/js/modernizr-2.6.2.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         <style type="text/css">
           @media (min-width:992px){
             .page-header {
@@ -129,7 +130,7 @@ $donnees = $req->fetch();
                             <div class="container"></div>
                           <?php } 
                             }?>
-									<h2 style="font-weight: bold;color: #ce2b37;">Commander</h2>
+									<h2 style="font-weight: bold;color: #ce2b37;">Comsmander</h2>
 									
 									<div class="form-group">
 									    <label for="msg-email">Produit</label>

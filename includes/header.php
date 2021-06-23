@@ -61,14 +61,7 @@
                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>-->
 
-                                    <li>
-
-                                        <a href="https://www.facebook.com/fiorefromage/" target="_blank"><span class="fa fa-facebook-square" style="font-size: x-large;"></span></a>
-                                    </li>
-                                    <li style="margin-left: -15px;">
-                                        
-                                        <a href="#" target="_blank"><span class="fa fa-youtube-square" style="font-size: x-large;"></span></a>
-                                    </li>
+                                   
 
                                     <li style="margin-left: -15px;">
                                         
