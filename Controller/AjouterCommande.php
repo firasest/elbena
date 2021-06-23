@@ -1,8 +1,8 @@
 <?php
-require_once('../Model/Contact.class.php');
-$contact = new Contact($_POST['email'],$_POST['objet'],$_POST['message']);
-$contact->ajouter();
+require_once('../Model/Commande.Class.php');
+$commande = new Commande($_POST['produit'],$_POST['prix'],$_POST['prix_total']);
+$commande->ajouter();
 
-header("location:../contact.php?resultat=oui");
+header("location:../Checkout.php");
 //exit();
 ?>
