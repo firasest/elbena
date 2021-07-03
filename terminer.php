@@ -62,13 +62,13 @@ th, td {
 
       <table id="t01">
   <tr>
-    <th>Produit</th>
-    <th>Prix</th> 
+    <th>Nom Et Prenom</th>
+    <th>Commande</th> 
     
   </tr>
   <?php while($donnees1 = $req1->fetch()){ ?>
   <tr>
-    <td><input type="text" name="produit" value="<?php echo $donnees1['produit']; ?>"></td>
+    <td><input type="text" name="produit" value="<?php echo $donnees1['']; ?>"></td>
     <td><input type="text" name="prix" value="<?php echo $donnees1['prix']; ?>"></td>
   </tr>
   <?php } ?>
