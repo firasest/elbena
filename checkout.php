@@ -54,8 +54,12 @@ th, td {
 <div class="row" class="check">
   <div class="col-75">
     <div class="container">
+<<<<<<< HEAD
 
       <form action="Controller/AjouterClient.php" method="post">
+=======
+      <form action="Controller/AjouterClient.php?<?php echo $donnees['id']; ?>" method="post">
+>>>>>>> 16d49a6ef5d99487cdc8de22eb8685ebcb74c1bc
 
         <div class="row">
           <div class="col-50" style="
