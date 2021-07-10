@@ -104,7 +104,7 @@ header('Location:login.php');
         <th>id</th>
         <th>Login</th>
         <th>Password</th>
-        <th>Email</th>
+        <th>Nom</th>
         <th>Action</th>
       </tr>
     </thead>
@@ -114,7 +114,7 @@ header('Location:login.php');
         <td><?php echo $donnees['id']; ?></td>
         <td><?php echo $donnees['login']; ?></td>
         <td><?php echo $donnees['password']; ?></td>
-        <td><?php echo $donnees['email']; ?></td>
+        <td><?php echo $donnees['nom']; ?></td>
         <td>
         
         <a href="modifierregister.php?id=<?php echo $donnees['id']; ?>">Modifier</a>||

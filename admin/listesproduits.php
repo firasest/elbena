@@ -128,15 +128,9 @@ header('Location:login.php');
         <th>id</th>
         <th>titre</th>
         <th>description</th>
-        <th>Action</th>
         <th>image</th>
         <th>produit</th>
-        <th>code_produit</th>
-        <th>poids</th>
-        <th>Code_Ean</th>
-        <th>DLC</th>
-        <th>Categorie</th>
-        <th>Categorie2</th>
+        <th>Action</th>
         
       </tr>
     </thead>
@@ -146,20 +140,14 @@ header('Location:login.php');
         <td><?php echo $donnees['id']; ?></td>
         <td><?php echo $donnees['titre']; ?></td>
         <td ><?php echo $donnees['description']; ?></td>
+        <td ><img src="../<?php echo $donnees['img']; ?>" width="20%"></td>
+        <td><?php echo $donnees['produit']; ?></td>
         <td>
         
         <a href="modifierproduct.php?id=<?php echo $donnees['id']; ?>">Modifier</a>||<a href="Controller/supp_produit.php?id=<?php echo $donnees['id']; ?>">Supprimer</a>
 
         </td>
-        <td ><?php echo $donnees['img']; ?></td>
-        <td><?php echo $donnees['produit']; ?></td>
-        <td><?php echo $donnees['code_produit']; ?></td>
-        <td><?php echo $donnees['poids']; ?></td>
-        <td><?php echo $donnees['code_ean']; ?></td>
-        <td><?php echo $donnees['dlc']; ?></td>
-        <td><?php echo $donnees['Categorie']; ?></td>
-        <td><?php echo $donnees['Categorie2']; ?></td>
-        <td><?php echo $donnees['description']; ?></td>
+       
         
       </tr>
       

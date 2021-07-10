@@ -1,18 +1,24 @@
 <?php
 include("includes/connect_db.php");
-
+$id= $_GET['id'];
+$req1 = $bdd->query("SELECT * FROM commande WHERE id=$id ");
 $req1 = $bdd->query("SELECT * FROM panier ");
 $req2 = $bdd->query("SELECT * FROM client ");
 $donnees2 = $req2->fetch();
-$req3 = $bdd->query("SELECT SUM(prix) AS total FROM panier ");
-$donnees3 = $req3->fetch();
+$req3 = $bdd->query("SELECT SUM(prix) AS total FROM panier  ");
+//$donnees3 = $req3->fetch();
 //$donnees = $req->fetch();
  ?>
+
  <?php
 include("includes/connect_db.php");
+$id= $_GET['id'];
 
-$req = $bdd->query("SELECT * FROM client ");
-$donnees = $req->fetch();
+$req5 = $bdd->query("SELECT * FROM client  ");
+$donnees = $req5->fetch();
+
+
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -43,25 +49,18 @@ th, td {
   background-color: black;
   color: white;
 }
-.check{
-  margin: 50%;
-}
 </style>
     </head>
     <body>
         
     
-<div class="row" class="check">
+<div class="row">
   <div class="col-75">
     <div class="container">
-
       <form action="Controller/AjouterClient.php" method="post">
 
         <div class="row">
-          <div class="col-50" style="
-    margin-right: 20%;
-    margin-left: 20%;
-">
+          <div class="col-50">
             <h3>Adresse de facturation</h3>
             <table>
             <tr>
@@ -100,52 +99,7 @@ th, td {
     </div>
   </div>
 
-  <div class="col-25" id="part2">
-    <div class="container">
-      
-      <form action="Controller/ajoutercommande.php" method="post">
-
-      <table id="t01">
-  <tr>
-    <th>Produit</th>
-    <th>Prix</th> 
-    
-  </tr>
-  <?php while($donnees1 = $req1->fetch()){ ?>
-  <tr>
-    <td><input type="text" name="produit" value="<?php echo $donnees1['produit']; ?>"></td>
-    <td><input type="text" name="prix" value="<?php echo $donnees1['prix']; ?>"></td>
-  </tr>
-  <?php } ?>
-  <tr>
-  <th>Total</th>
-    <th><input type="text" name="prix_total" value="<?php echo $donnees3['total']; ?>"></th>  
-  </tr>
-</table>
-
-
-<button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
-									<span class="btn-label">Commander</span>
-									<span class="btn-icon fa fa-envelope"></span>
-									</button>
-
-
-
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-  </div>
+  
 </div>
 </body>
     </html>

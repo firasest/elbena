@@ -74,7 +74,7 @@
                 </li>
 
 
-                <li>
+              <!--  <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bx-table"></i>
                         <span>Recette</span>
@@ -86,7 +86,7 @@
                         
                     </ul>
                 </li>
-
+-->
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bx-file"></i>
