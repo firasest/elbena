@@ -51,7 +51,7 @@ th, td {
 <div class="row">
   <div class="col-75">
     <div class="container">
-      <form action="Controller/AjouterClient.php" method="post">
+      <form action="Controller/AjouterClient.php?<?php echo $donnees['id']; ?>" method="post">
 
         <div class="row">
           <div class="col-50">
