@@ -69,8 +69,8 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="useremail">Email</label>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Saisissez votre Email">        
+                                            <label for="usernom">nom</label>
+                                            <input type="nom" class="form-control" id="nom" name="nom" placeholder="Saisissez votre nom">        
                                         </div>
                     
                                         <div class="mt-4">

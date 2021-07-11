@@ -2,15 +2,15 @@
 class Admin{
 private $login;
 private $password;
-private $email;
+private $nom;
 
 
                 
 
-function __construct($login,$password,$email){
+function __construct($login,$password,$nom){
 $this->login = $login;
 $this->password = $password;
-$this->email = addslashes($email);
+$this->nom = addslashes($nom);
 
 
 
@@ -22,7 +22,7 @@ public function ajouter(){
   include('../includes/connect_db.php');
       
     
-      $req = $bdd->exec ("INSERT INTO `admin`(`login`, `password`, `email`) VALUES ('$this->login','$this->password','$this->email')");
+      $req = $bdd->exec ("INSERT INTO `admin`(`login`, `password`, `nom`) VALUES ('$this->login','$this->password','$this->nom')");
       
       echo'oui';
                   //return TRUE;
@@ -36,7 +36,7 @@ public function ajouter(){
 
     $id=$_GET['id'];
         
-    $req=$bdd->exec("UPDATE `admin` SET  `login`='$this->login',`password`='$this->password',`email`='$this->email' WHERE id=$id");
+    $req=$bdd->exec("UPDATE `admin` SET  `login`='$this->login',`password`='$this->password',`nom`='$this->nom' WHERE id=$id");
     
     
     echo'oui';
@@ -58,7 +58,7 @@ public function supprimer(){
         
 }
 
-//$instance = new User($_POST['nom'],$_POST['prenom'],$_POST['login'],$_POST['email'],$_POST['pass'],$_POST['type']);
+//$instance = new User($_POST['nom'],$_POST['prenom'],$_POST['login'],$_POST['nom'],$_POST['pass'],$_POST['type']);
 
 
 ?>

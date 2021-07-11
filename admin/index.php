@@ -1,4 +1,12 @@
 <?php
+//session_start();
+include("includes/connect_db.php");
+
+$req = $bdd->query("SELECT * FROM admin ");
+$donnees = $req->fetch();
+
+ ?>
+<?php
 session_start();
 if (empty($_SESSION['id'])) {
 header('Location:login.php');
@@ -79,7 +87,7 @@ header('Location:login.php');
                                             <div class="col-7">
                                                 <div class="text-primary p-3">
                                                     <h5 class="text-primary">Bienvenue !</h5>
-                                                    <p>fiore Dashboard</p>
+                                                    <p>elbena Dashboard</p>
                                                 </div>
                                             </div>
                                             <div class="col-5 align-self-end">
@@ -91,9 +99,9 @@ header('Location:login.php');
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="avatar-md profile-user-wid mb-4">
-                                                    <img src="assets/images/users/fi.jpg" alt="" class="img-thumbnail rounded-circle">
+                                                    <img src="assets/images/sabrine.jpg" alt="" class="img-thumbnail rounded-circle">
                                                 </div>
-                                                <h5 class="font-size-15 text-truncate">Firas</h5>
+                                                <h5 class="font-size-15 text-truncate"><?php echo $donnees['nom']; ?></h5>
                                                 <p class="text-muted mb-0 text-truncate">DT</p>
                                             </div>
 
