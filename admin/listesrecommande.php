@@ -1,9 +1,9 @@
 <?php
 //session_start();
 include("includes/connect_db.php");
-$id= $_GET['id'];
-$req = $bdd->query("SELECT * FROM commande WHERE id=$id");
-$donnees = $req->fetch();
+
+$req = $bdd->query("SELECT * FROM client");
+//$donnees = $req->fetch();
 
  ?>
    <?php
@@ -19,7 +19,7 @@ header('Location:login.php');
 <!-- Mirrored from themesbrand.com/skote/layouts/vertical/projects-create.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2020 15:46:42 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Listes Recette</title>
+        <title>Listes commande</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -73,12 +73,12 @@ header('Location:login.php');
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                                    <h4 class="mb-0 font-size-18">Listes Recette</h4>
+                                    <h4 class="mb-0 font-size-18">Listes Commande</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Fiore</a></li>
-                                            <li class="breadcrumb-item active">Listes Recette</li>
+                                            <li class="breadcrumb-item active">Listes Commande</li>
                                         </ol>
                                     </div>
                                     
@@ -118,7 +118,7 @@ header('Location:login.php');
 
                                      
  <div class="container">
-  <h2>Listes Client</h2>
+  <h2>Listes Commande</h2>
               
   <table class="table">
     <thead>
@@ -127,7 +127,8 @@ header('Location:login.php');
         <th>Produit</th>
         <th>Prix</th>
         <th>Prix Total</th>
-    
+       
+       
       </tr>
     </thead>
     <?php while($donnees = $req->fetch()){ ?>
@@ -137,7 +138,7 @@ header('Location:login.php');
         <td><?php echo $donnees['produit']; ?></td>
         <td><?php echo $donnees['prix']; ?></td>
         <td><?php echo $donnees['prix_total']; ?></td>
-        
+       
         
       </tr>
       

@@ -145,7 +145,7 @@ header('Location:login.php');
         <td><?php echo $donnees['zip']; ?></td>
         <td>
         
-        <a href="listesrecommande.php?id=<?php echo $donnees['id']; ?>">commande</a>||<a href="Controller/supp_recette.php?id=<?php echo $donnees['id']; ?>">Supprimer</a>
+        <a href="listesrecommande.php?id=<?php echo $donnees['id']; ?>">commande</a>
         </td>
       </tr>
       
