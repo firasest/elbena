@@ -28,12 +28,12 @@
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nos Produits<span class="fa fa-angle-down"></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="products.php#filter=*">Tous les produits</a></li>
-                                            <li><a href="products.php#filter=.rape">Patisserie Traditionnelle</a></li>
-                                            <li><a href="products.php#filter=.pate-presse"> Kounefa</a></li>
-                                            <li><a href="products.php#filter=.pate-file">Baklewa</a></li>
-                                            <li><a href="products.php#filter=.pate-molle">Gateaux</a></li>
-                                            <li><a href="products.php#filter=.pate-fraiche">Chocolat</a></li>
-                                            <li><a href="products.php#filter=.a-base-alimentaire">Macaron</a></li>
+                                            <li><a href="products.php#filter=.patisserie_traditionnelle">Patisserie Traditionnelle</a></li>
+                                            <li><a href="products.php#filter=.kunafeh"> Kounefa</a></li>
+                                            <li><a href="products.php#filter=.baklewa">Baklewa</a></li>
+                                            <li><a href="products.php#filter=.gateaux">Gateaux</a></li>
+                                            <li><a href="products.php#filter=.chocolat">Chocolat</a></li>
+                                            <li><a href="products.php#filter=.macaron">Macaron</a></li>
                                            
                                             
                                         </ul>

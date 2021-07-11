@@ -144,10 +144,10 @@ header('Location:login.php');
                                             </div>
 
                                             <div class="form-group row mb-4">
-                                                <label for="projectname" class="col-form-label col-lg-2">DLC</label>
+                                                <label for="projectname" class="col-form-label col-lg-2">Prix</label>
                                                 <div class="col-lg-10">
-                                                    <input id="projectname" name="dlc" type="text" class="form-control" 
-                                                    placeholder="DLC" value="<?php echo $donnees['dlc'] ?>">
+                                                    <input id="projectname" name="prix" type="text" class="form-control" 
+                                                    placeholder="Prix" value="<?php echo $donnees['prix'] ?>">
                                                 </div>
                                             </div>
 

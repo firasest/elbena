@@ -113,9 +113,9 @@ header('Location:login.php');
             </div>
 
             <div class="form-group">
-                <label for="useremail">Email</label>
-                <input type="email" class="form-control" id="email" name="email" 
-                placeholder="Saisissez votre Email" value="<?php echo $donnees['email']; ?>">        
+                <label for="useremail">Nom</label>
+                <input type="text" class="form-control" id="nom" name="nom" 
+                placeholder="Saisissez votre Nom" value="<?php echo $donnees['nom']; ?>">        
             </div>
 
             <div class="mt-4">
