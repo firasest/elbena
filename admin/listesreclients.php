@@ -2,7 +2,7 @@
 //session_start();
 include("includes/connect_db.php");
 
-$req = $bdd->query("SELECT * FROM recette");
+$req = $bdd->query("SELECT * FROM client");
 //$donnees = $req->fetch();
 
  ?>
@@ -118,15 +118,18 @@ header('Location:login.php');
 
                                      
  <div class="container">
-  <h2>Listes Recette</h2>
+  <h2>Listes Client</h2>
               
   <table class="table">
     <thead>
       <tr>
         <th>id</th>
-        <th>titre</th>
-        <th>description</th>
-       
+        <th>Nom & Prenom</th>
+        <th>Email</th>
+        <th>Adresse</th>
+        <th>Ville</th>
+        <th>region</th>
+        <th>ZIP</th>
         <th>Action</th>
       </tr>
     </thead>
@@ -134,12 +137,15 @@ header('Location:login.php');
     <tbody>
       <tr>
         <td><?php echo $donnees['id']; ?></td>
-        <td><?php echo $donnees['titre']; ?></td>
-        <td><?php echo $donnees['description']; ?></td>
-        
+        <td><?php echo $donnees['nom_prenom']; ?></td>
+        <td><?php echo $donnees['email']; ?></td>
+        <td><?php echo $donnees['adresse']; ?></td>
+        <td><?php echo $donnees['ville']; ?></td>
+        <td><?php echo $donnees['region']; ?></td>
+        <td><?php echo $donnees['zip']; ?></td>
         <td>
         
-        <a href="modifierrecette.php?id=<?php echo $donnees['id']; ?>">Modifier</a>||<a href="Controller/supp_recette.php?id=<?php echo $donnees['id']; ?>">Supprimer</a>
+        <a href="listesrecommande.php?id=<?php echo $donnees['id']; ?>">commande</a>||<a href="Controller/supp_recette.php?id=<?php echo $donnees['id']; ?>">Supprimer</a>
         </td>
       </tr>
       

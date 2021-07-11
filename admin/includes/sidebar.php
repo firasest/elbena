@@ -74,19 +74,19 @@
                 </li>
 
 
-              <!--  <li>
+                <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bx-table"></i>
-                        <span>Recette</span>
+                        <span>Client</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="listesrecette.php">listes  Recette</a></li>
-                        <li><a href="ajouterrecette.php">Ajouter  Recette</a></li>
+                        <li><a href="listesreclients.php">listes  Client</a></li>
+                        <li><a href="ajouterrecette.php">Ajouter  Client</a></li>
                         
                         
                     </ul>
                 </li>
--->
+
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="bx bx-file"></i>

@@ -17,6 +17,49 @@ $donnees = $req->fetch();
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta content="" name="description">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        <link rel="icon" type="image/png" href="images/icon.png" />
+        <!-- You can use Open Graph tags to customize link previews.
+        Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+        <meta property="og:url"           content="http://fromagefiore.com/barbarossa-edam.html" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="barbarossa-edam" />
+        <meta property="og:description"   content="Barbarossa :  Préparation  aromatisé au fromage Edam." />
+        <meta property="og:image"         content="http://fromagefiore.com/images/a-base-alimentaire/Edam%20Barbarossa%20.png" />
+        
+        <!-- css -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="src/css/font-awesome.css" rel="stylesheet">
+        <link href="src/css/animate.css" rel="stylesheet">
+        <link href="src/css/swipebox.css" rel="stylesheet">
+        <link href="src/css/swiper.min.css" rel="stylesheet">
+        <link href="src/css/winemaker-theme.css" rel="stylesheet">
+        <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
+        <link href="src/css/style.css" rel="stylesheet">
+        <link href="src/css/styleaddcart.css" rel="stylesheet">
+        
+        <!-- google fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Merriweather:300,400,700,900,900italic,700italic,400italic,300italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+        
+		<!-- head js -->
+        <script src="src/js/modernizr-2.6.2.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <style type="text/css">
+          @media (min-width:992px){
+            .produitFont{
+               margin-bottom: -51px !important;
+            }
+
+          }
+
+
+
+        </style>
     <link href="src/css/checkout.css" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
@@ -52,14 +95,18 @@ th, td {
         
     
 <div class="row" class="check">
+  <div class="he" style="
+    margin-left: 7%;
+">
+<?php include("includes/header.php") ?>
+</div>
   <div class="col-75">
     <div class="container">
-<<<<<<< HEAD
 
+   
       <form action="Controller/AjouterClient.php" method="post">
-=======
-      <form action="Controller/AjouterClient.php?<?php echo $donnees['id']; ?>" method="post">
->>>>>>> 16d49a6ef5d99487cdc8de22eb8685ebcb74c1bc
+
+    
 
         <div class="row">
           <div class="col-50" style="
@@ -70,46 +117,33 @@ th, td {
             <table>
             <tr>
             <label for="fname"><i class="fa fa-user"></i> Nom & Prenom</label>
-            <input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['nom_prenom']; ?>" name="nom_prenom" value="<?php echo $donnees['nom_prenom'] ?>" >
+            <input type="text" class="form-control" id="msg-email" placeholder="Entrer votre Nom & Prénom" name="nom_prenom"  >
 
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['email']; ?>" name="email" value="<?php echo $donnees['email'] ?>">
+            <input type="text" class="form-control" id="msg-email" placeholder="Entrer votre Email" name="email" >
 
             <label for="adr"><i class="fa fa-address-card-o"></i> Adresse </label>
-            <input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['adresse']; ?>" name="adresse" value="<?php echo $donnees['adresse'] ?>" >
+            <input type="text" class="form-control" id="msg-email" placeholder="Entrer votre Adresse" name="adresse"  >
 
             <label for="city"><i class="fa fa-institution"></i> Ville</label>
-            <input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['ville']; ?>" name="ville" value="<?php echo $donnees['ville'] ?>" >
+            <input type="text" class="form-control" id="msg-email" placeholder="Entrer votre Ville" name="ville"  >
 
             <div class="row">
               <div class="col-50">
                 <label for="state">Region</label>
-                <input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['region']; ?>" name="region" value="<?php echo $donnees['region'] ?>">
+                <input type="text" class="form-control" id="msg-email" placeholder="Entrer votre Region" name="region" >
               </div>
               <div class="col-50">
                 <label for="zip">Zip</label>
-                <input type="text" class="form-control" id="msg-email" placeholder="<?php echo $donnees['zip']; ?>" name="zip" value="<?php echo $donnees['zip'] ?>">
+                <input type="text" class="form-control" id="msg-email" placeholder="Entrer votre ZIP" name="zip" >
               </div>
             </div>
           </div>
 
           
         </div>
-        
-        <button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
-									<span class="btn-label">Valider</span>
-									<span class="btn-icon fa fa-envelope"></span>
-									</button>
-      </form>
-    </div>
-  </div>
 
-  <div class="col-25" id="part2">
-    <div class="container">
-      
-      <form action="Controller/ajoutercommande.php" method="post">
-
-      <table id="t01">
+        <table id="t01">
   <tr>
     <th>Produit</th>
     <th>Prix</th> 
@@ -119,37 +153,48 @@ th, td {
   <tr>
     <td><input type="text" name="produit" value="<?php echo $donnees1['produit']; ?>"></td>
     <td><input type="text" name="prix" value="<?php echo $donnees1['prix']; ?>"></td>
+    <td><a href="Controller/supp_prod.php?id=<?php echo $donnees['id']; ?>">Supprimer</a></td>
   </tr>
   <?php } ?>
   <tr>
   <th>Total</th>
-    <th><input type="text" name="prix_total" value="<?php echo $donnees3['total']; ?>"></th>  
+    <th style="
+    color: green;
+"><input type="text" name="prix_total" value="<?php echo $donnees3['total']; ?>"></th>  
   </tr>
 </table>
-
-
-<button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
-									<span class="btn-label">Commander</span>
+        
+        <button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
+									<span class="btn-label">Valider</span>
 									<span class="btn-icon fa fa-envelope"></span>
 									</button>
-
-
-
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
+                  <button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
+									<span class="btn-label"><a href="Controller/supp_prod.php?id=<?php echo $donnees['id']; ?>">Supprimer</a></span>
+									<span class="btn-icon fa fa-envelope"></span>
+									</button>
+      </form>
     </div>
   </div>
+
+
 </div>
+  <!--<script type="text/javascript" src="../../../code.jquery.com/jquery-1.11.3.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="src/js/jquery.swipebox.min.js"></script>
+        <script type="text/javascript" src="src/js/jquery.stellar.js"></script>
+        <script type="text/javascript" src="src/js/swiper.jquery.min.js"></script>
+        <script type="text/javascript" src="src/js/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="src/js/sticky.js"></script>
+        <script type="text/javascript" src="src/js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="src/js/winemaker-theme.js"></script>
+		<script type="text/javascript">
+		;( function( $ ) {
+		
+			$( '.swipebox' ).swipebox();
+		
+		} )( jQuery );
+		</script>  
 </body>
     </html>

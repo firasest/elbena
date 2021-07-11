@@ -21,7 +21,8 @@ public function ajouter(){
 
 include('../includes/connect_db.php');
     
-	
+
+
 		$req = $bdd->exec ("INSERT INTO `panier`(`produit`, `prix`) VALUES ('$this->produit','$this->prix')");
 		
 		echo'oui';
@@ -29,7 +30,16 @@ include('../includes/connect_db.php');
 
 }
 
+public function supprimer(){ 
+    
+	include('../includes/connect_db.php');
 
+    $req = $bdd->exec('DELETE FROM panier WHERE id=\''.$_GET['id'].'\''); 
+ 
+		echo'oui';	
+ 
+ 
+}
 
 }
 

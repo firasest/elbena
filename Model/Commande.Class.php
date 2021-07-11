@@ -4,7 +4,7 @@ private $produit;
 private $prix;
 private $prix_total;
 
-
+c
                 
 
 function __construct($produit,$prix,$prix_total){

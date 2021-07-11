@@ -9,7 +9,7 @@
         <link rel="icon" type="image/png" href="images/icon.png" />
 
 
-        <link rel="alternate" hreflang="fr-TN" href="http://fromagefiore.com/" />
+        <link rel="alternate" hreflang="fr-TN" href="#" />
 
         <meta name="description" content="Le Maître affineur Fiore grant du maintien du savoir-faire séculaire italien transmis de père en fils depuis des générations: l'art et la conduite de l'affinage requièrement développés.">
 
