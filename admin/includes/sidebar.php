@@ -81,7 +81,7 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="listesreclients.php">listes  Client</a></li>
-                        <li><a href="ajouterrecette.php">Ajouter  Client</a></li>
+                       <!-- <li><a href="ajouterrecette.php">Ajouter  Client</a></li>-->
                         
                         
                     </ul>
