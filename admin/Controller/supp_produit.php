@@ -9,7 +9,7 @@ $_POST['produit'],
 $_POST['code_produit'],
 $_POST['poids'],
 $_POST['code_ean'],
-$_POST['dlc'],
+$_POST['prix'],
 $_POST['catagorie'],
 $_POST['catagorie2']);
 $produit->supprimer();
