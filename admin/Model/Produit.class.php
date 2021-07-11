@@ -2,16 +2,15 @@
 class Produit{
 private $titre;
 private $description;
-
 private $produit;
 private $code_produit;
 private $poids;
 private $code_ean;
-private $dlc;
+private $prix;
 private $catagorie;
 private $catagorie2;            
 
-function __construct($titre,$description,$produit,$code_produit,$poids,$code_ean,$dlc,$catagorie,$catagorie2){
+function __construct($titre,$description,$produit,$code_produit,$poids,$code_ean,$prix,$catagorie,$catagorie2){
 
 $this->titre = addslashes($titre);
 $this->description = addslashes($description);
@@ -20,7 +19,7 @@ $this->produit = addslashes($produit);
 $this->code_produit = addslashes($code_produit);
 $this->poids = addslashes($poids);
 $this->code_ean = addslashes($code_ean);
-$this->dlc = addslashes($dlc);
+$this->prix = addslashes($prix);
 $this->catagorie = addslashes($catagorie);
 $this->catagorie2 = addslashes($catagorie2);
 }
@@ -37,7 +36,7 @@ public function ajouter(){
       `code_produit`,
       `poids`, 
       `code_ean`, 
-      `dlc`,
+      `prix`,
       `catagorie`, 
       `catagorie2`) 
       VALUES (
@@ -47,7 +46,7 @@ public function ajouter(){
       '$this->code_produit',
       '$this->poids',
       '$this->code_ean',
-      '$this->dlc',
+      '$this->prix',
       '$this->catagorie',
       '$this->catagorie2')");
       
@@ -71,7 +70,7 @@ public function ajouter(){
     `code_produit`='$this->code_produit' ,
     `poids`='$this->poids' ,
     `code_ean`='$this->code_ean', 
-    `dlc`='$this->dlc', 
+    `prix`='$this->prix', 
     `catagorie`='$this->catagorie' ,
     `catagorie2`='$this->catagorie2'
     WHERE id=$id");

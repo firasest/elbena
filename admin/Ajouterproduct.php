@@ -69,7 +69,7 @@ header('Location:login.php');
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Fiore</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Elbena</a></li>
                                             <li class="breadcrumb-item active">Ajouter_produit</li>
                                         </ol>
                                     </div>
@@ -137,10 +137,10 @@ header('Location:login.php');
                                             </div>
 
                                             <div class="form-group row mb-4">
-                                                <label for="projectname" class="col-form-label col-lg-2">DLC</label>
+                                                <label for="projectname" class="col-form-label col-lg-2">Prix</label>
                                                 <div class="col-lg-10">
-                                                    <input id="projectname" name="dlc" type="text" class="form-control" 
-                                                    placeholder="DLC">
+                                                    <input id="projectname" name="prix" type="text" class="form-control" 
+                                                    placeholder="prix">
                                                 </div>
                                             </div>
 
