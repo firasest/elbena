@@ -2,7 +2,7 @@
 //session_start();
 include("includes/connect_db.php");
 
-$req = $bdd->query("SELECT * FROM client");
+$req = $bdd->query("SELECT * FROM panier");
 //$donnees = $req->fetch();
 
  ?>
@@ -19,7 +19,7 @@ header('Location:login.php');
 <!-- Mirrored from themesbrand.com/skote/layouts/vertical/projects-create.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2020 15:46:42 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Listes commande</title>
+        <title>Listes Panier</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -73,12 +73,12 @@ header('Location:login.php');
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                                    <h4 class="mb-0 font-size-18">Listes Commande</h4>
+                                    <h4 class="mb-0 font-size-18">Listes Panier</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Fiore</a></li>
-                                            <li class="breadcrumb-item active">Listes Commande</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Elbena</a></li>
+                                            <li class="breadcrumb-item active">Listes Panier</li>
                                         </ol>
                                     </div>
                                     
@@ -99,7 +99,7 @@ header('Location:login.php');
                           <br><div class="container"><div class="alert alert-success alert-dismissible">
                                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                                     
-                                    Recette Ajouter avec succes.
+                                    Panier Ajouter avec succes.
                                     
                                     </div></div>
 
@@ -118,7 +118,7 @@ header('Location:login.php');
 
                                      
  <div class="container">
-  <h2>Listes Commande</h2>
+  <h2>Listes Panier</h2>
               
   <table class="table">
     <thead>
@@ -126,7 +126,7 @@ header('Location:login.php');
         <th>id</th>
         <th>Produit</th>
         <th>Prix</th>
-        <th>Prix Total</th>
+        
        
        
       </tr>
@@ -135,9 +135,9 @@ header('Location:login.php');
     <tbody>
       <tr>
         <td><?php echo $donnees['id']; ?></td>
-        <td><a href="listesrepanier.php?id=<?php echo $donnees['id']; ?>">Panier</a></td>
+        <td><?php echo $donnees['produit']; ?></td>
         <td><?php echo $donnees['prix']; ?></td>
-        <td><?php echo $donnees['prix_total']; ?></td>
+        
        
         
       </tr>
