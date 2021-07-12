@@ -166,12 +166,9 @@ th, td {
         
         <button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
 									<span class="btn-label">Valider</span>
-									<span class="btn-icon fa fa-envelope"></span>
+								
 									</button>
-                  <button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
-									<span class="btn-label"><a href="Controller/supp_ppanier.php?id=<?php echo $donnees['id']; ?>">Supprimer</a></span>
-									<span class="btn-icon fa fa-envelope"></span>
-									</button>
+                  
       </form>
     </div>
   </div>
