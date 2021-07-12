@@ -1,3 +1,9 @@
+<?php
+include("includes/connect_db.php");
+
+$req = $bdd->query("SELECT * FROM produit ");
+//$donnees = $req->fetch();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -438,96 +444,24 @@
                         </div>
 
                         <div class="row">
-
+                        <?php while($donnees = $req->fetch()){ ?>
                             <div class="col-sm-4 col-xs-12 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
-                                <a href="products.php#filter=.pate-presse">
+                                <a href="products.php#filter=.<?php echo $donnees['catagorie2']; ?>">
                                 <figure class="box-1 img-thumbnail mar-v">
-                                    <div class="isotope-grid-item pate-presse">
+                                    <div class="isotope-grid-item <?php echo $donnees['catagorie2']; ?>">
                                             <article class="produit teaser">
                                                
-                                                <span class="product-newMaron new-fr">Patisserie Traditionnelle</span>
+                                                <span class="product-newMaron new-fr"><?php echo $donnees['catagorie2']; ?></span>
                                                 
-                                                    <img alt="presse" class="img-responsive lazy" data-src="images/elbena/pieces1.jpg">
+                                                    <img alt="presse" class="img-responsive lazy" data-src="<?php echo $donnees['img'];?>">
                                                     
                                             </article>
                                         </div>
                                 </figure>
                             </a>
                             </div>
-
-                            <div class="col-sm-4 col-xs-12 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
-                                <a href="products.php#filter=.pate-molle">
-                                <figure class="box-1 img-thumbnail mar-v">
-                                    <div class="isotope-grid-item pate-presse">
-                                            <article class="produit teaser">
-                                                <span class="product-newRouge new-fr">Chocolat</span>
-                                                
-                                                    <img alt="molle" class="img-responsive lazy" data-src="images/elbena/chokolat.jpg">
-                                                    
-                                            </article>
-                                        </div>
-                                </figure>
-                            </a>
-                            </div>
-
-                            <div class="col-sm-4 col-xs-12 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
-                                <a href="products.php#filter=.a-base-alimentaire">
-                                <figure class="box-1 img-thumbnail mar-v">
-                                    <div class="isotope-grid-item pate-presse">
-                                            <article class="produit teaser">
-                                                <span class="product-newVert new-fr">Macaron</span>
-                                                
-                                                    <img alt="abase" class="img-responsive lazy" data-src="images/elbena/macaron.jpg">
-                                                    
-                                            </article>
-                                        </div>
-                                </figure>
-                            </a>
-                            </div>
-
-                            <div class="col-sm-4 col-xs-12 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
-                                <a href="products.php#filter=.rape">
-                                <figure class="box-1 img-thumbnail mar-v">
-                                    <div class="isotope-grid-item pate-presse">
-                                            <article class="produit teaser">
-                                                <span class="product-newBlanc new-fr">kunafeh</span>
-                                                
-                                                    <img alt="rape" class="img-responsive lazy" data-src="images/elbena/kounefa1.jpg">
-                                                    
-                                            </article>
-                                        </div>
-                                </figure>
-                            </a>
-                            </div>
-
-                            <div class="col-sm-4 col-xs-12 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
-                                <a href="products.php#filter=.pate-fraiche">
-                                <figure class="box-1 img-thumbnail mar-v">
-                                    <div class="isotope-grid-item pate-presse">
-                                            <article class="produit teaser">
-                                                <span class="product-newRz new-fr">Gateaux</span>
-                                                
-                                                    <img alt="fraiche" class="img-responsive lazy" data-src="images/elbena/gateaux1.jpg">
-                                                    
-                                            </article>
-                                        </div>
-                                </figure>
-                            </a>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
-                                <a href="products.php#filter=.pate-file">
-                                <figure class="box-1 img-thumbnail mar-v">
-                                    <div class="isotope-grid-item pate-presse">
-                                            <article class="produit teaser">
-                                                <span class="product-newBleu new-fr">Baklewa</span>
-                                                
-                                                    <img alt="filee" class="img-responsive lazy" data-src="images/elbena/baklewaturk.jpg">
-                                                    
-                                            </article>
-                                        </div>
-                                </figure>
-                            </a>
-                            </div>
+                            <?php } ?>
+                        
 
 
 
