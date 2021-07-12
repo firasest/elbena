@@ -147,7 +147,7 @@ th, td {
   <tr>
     <th>Produit</th>
     <th>Prix</th> 
-    
+    <th>Acrion</th>
   </tr>
   <?php while($donnees1 = $req1->fetch()){ ?>
   <tr>
@@ -160,7 +160,7 @@ th, td {
   <th>Total</th>
     <th style="
     color: green;
-"><input type="text" name="prix_total" value="<?php echo $donnees3['total']; ?>"></th>  
+"><input type="text" name="prix_total" value="<?php echo $donnees3['total']; ?>"></th>  <th></th>
   </tr>
 </table>
         
