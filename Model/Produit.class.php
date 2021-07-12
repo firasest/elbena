@@ -34,7 +34,7 @@ public function supprimer(){
     
 	include('../includes/connect_db.php');
 
-    $req = $bdd->exec('DELETE FROM panier WHERE id=\''.$_GET['id'].'\''); 
+    $req = $bdd->exec('DELETE FROM `panier` WHERE id=\''.$_GET['id'].'\''); 
  
 		echo'oui';	
  

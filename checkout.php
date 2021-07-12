@@ -153,7 +153,7 @@ th, td {
   <tr>
     <td><input type="text" name="produit" value="<?php echo $donnees1['produit']; ?>"></td>
     <td><input type="text" name="prix" value="<?php echo $donnees1['prix']; ?>"></td>
-    <td><a href="Controller/supp_prod.php?id=<?php echo $donnees['id']; ?>">Supprimer</a></td>
+    <td><a href="Controller/supp_ppanier.php?id=<?php echo $donnees1['id']; ?>">Supprimer</a></td>
   </tr>
   <?php } ?>
   <tr>
@@ -169,7 +169,7 @@ th, td {
 									<span class="btn-icon fa fa-envelope"></span>
 									</button>
                   <button class="btn btn-primary btn-lg btn-animated btn-style-1" type="submit">
-									<span class="btn-label"><a href="Controller/supp_prod.php?id=<?php echo $donnees['id']; ?>">Supprimer</a></span>
+									<span class="btn-label"><a href="Controller/supp_ppanier.php?id=<?php echo $donnees['id']; ?>">Supprimer</a></span>
 									<span class="btn-icon fa fa-envelope"></span>
 									</button>
       </form>
